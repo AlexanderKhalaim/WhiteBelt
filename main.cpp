@@ -129,7 +129,7 @@ int main() {
             db.Print();
         }
         else if (com == "Stop") {
-            cout << "The pogramm hes ended!";
+            cout << "The pogramm has ended!";
             return 0;
         }
         else if (com == "Add") {
