@@ -120,7 +120,7 @@ void parsing(const string& data, int& year, int& month, int& day){
 int main() {
   Database db;
   
-  set<string> commands = { "Add", "Del", "Find", "Print" };
+  set<string> commands = { "Add", "Del", "Find", "Print", "Stop" };
     
   string command;
   while (getline(cin, command)) {
@@ -136,6 +136,10 @@ int main() {
       }
       if(com == "Print"){
           db.Print();
+      }
+      else if (com == "Stop") {
+          cout << "The pogramm hes ended!";
+          return 0;
       }
       else if(com == "Add"){
           string data, event;
